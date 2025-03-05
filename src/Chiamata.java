@@ -37,10 +37,6 @@ public class Chiamata {
 
     @Override
     public String toString() {
-        return "Chiamata{" +
-                "numeroTelefono='" + numeroTelefono + '\'' +
-                ", dataOra=" + dataOra +
-                ", dipendente=" + dipendente +
-                '}';
+        return "Chiamata: " + numeroTelefono + ", dataOra " + dataOra + ", dipendente " + dipendente;
     }
 }
