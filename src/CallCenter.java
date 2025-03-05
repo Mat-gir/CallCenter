@@ -3,8 +3,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CallCenter {
-    private Map<String, Cliente> clienti = new HashMap<>();
-    private Map<String, Chiamata> chiamate = new HashMap<>();
+    private final Map<String, Cliente> clienti = new HashMap<>();
+    private final Map<String, Chiamata> chiamate = new HashMap<>();
 
     public void aggiungiCliente(Cliente cliente){
         clienti.put(cliente.getNumeroTelefono(), cliente);
@@ -22,7 +22,7 @@ public class CallCenter {
         if(cliente == null){
             throw new Exception("Numero non registrato nel sistema");
         }
-        System.out.println(cliente.toString());
+        System.out.println(cliente);
 
         Chiamata chiamata = chiamate.get(numeroTelefono);
         if(chiamata != null) {
